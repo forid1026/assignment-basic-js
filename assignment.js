@@ -36,13 +36,13 @@ function brickCalculator(floor){
             sumFirstPortion = sumFirstPortion + firstPortion;
             
         }
-        if(i >= 11 && i <= 20){
+        else if(i >= 11 && i <= 20){
             var secondtPortion = 12 * 1000;
             sumSecondPortion = sumSecondPortion + secondtPortion;
             
 
         }
-        if(i >= 21){
+        else if(i >= 21){
             var thirdPortion = 10 * 1000;
             sumThirdPortion = sumThirdPortion + thirdPortion;
         }
@@ -51,7 +51,7 @@ function brickCalculator(floor){
     return total;
     
 }
-var totalBrick = brickCalculator(30);
+var totalBrick = brickCalculator(27);
 console.log("Total Brick needed : ", totalBrick);
 
 
